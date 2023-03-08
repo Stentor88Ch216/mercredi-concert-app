@@ -5,8 +5,8 @@ import {
   CssVarsProvider,
 } from '@mui/joy/styles';
 
-
 const joyTheme = extendJoyTheme();
+
 
 function App() {
   return (
@@ -17,8 +17,27 @@ function App() {
       >
         <ConcertsList />
     </CssVarsProvider>
-
   );
 }
 
 export default App;
+
+
+/*
+    import {
+      extendTheme as extendJoyTheme,
+      CssVarsProvider,
+    } from '@mui/joy/styles';
+
+    const joyTheme = extendJoyTheme();
+
+    ...
+
+    <CssVarsProvider
+    theme={joyTheme}
+      defaultMode="dark"
+      modeStorageKey="demo_dark-mode-by-default"
+      >
+        <ConcertsList />
+    </CssVarsProvider>
+*/
